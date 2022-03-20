@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Student Registrations Form</title>
+    </head>
+    <body>
+        <h1>Student Registrations Form</h1>
+        <form action="/demo">
+        <fieldset style="max-width: 500px;">
+            <legend>Student Details</legend>
+            <table>
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" id="name" placeholder="Enter your name.." required></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address</label></td>
+                    <td><input type="text" id="address" placeholder="Enter your address.."></td>
+                </tr>
+                
+                <tr>
+                    <td><label>City</label></td>
+                    <td><input list="cities" placeholder="Select our City">
+                        <datalist id="cities">
+                            <option value="Ongole">
+                            <option value="Bangalore">
+                            <option value="Hyderbad">
+                            <option value="Karnataka">
+                            <option value="Delhi">
+                            <option value="Mumbai">
+                            <option value="Other">    
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Email</label></td>
+                    <td><input type="email" placeholder="example@gmail.com" required></td>
+                </tr>
+                <tr>
+                    <td><label>Mobile No</label></td>
+                    <td><input type="tel" name="mobno" placeholder="tel"9[0-9]{10}></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth</label></td>
+                    <td><input type="date" id="dob" min="1999-10-02"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset style="max-width: 500px;">
+            <legend>Courses</legend>
+            <table>
+                <tr>
+                    <td><label>Course selected</label></td>
+                    <td><select name="courses" selected="none">
+                            <option value="selectone">Select one</option>
+                            <option value="Java">Java</option>
+                            <option value="C++">C++</option>
+                            <option value="Python">Python</option>
+                            <option value="Oracle">Oracle</option>
+                            <option value="Dot-Net">Dot-Net</option>
+                            <option value="CSS-HTML">CSS-HTML</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset style="max-width: 500px;">
+            <legend>Hobbies</legend>
+            <table>
+                <tr><td><input type="checkbox" name="Music" id="h1"><label for="h1">Listining Music</label></td></tr>
+                <tr><td><input type="checkbox" name="HandCrafts" id="h2"><label for="h2">Handcarfts</label></td></tr>
+                <tr><td><input type="checkbox" name="reading" id="h3"><label for="h3">Reading Books</label></td></tr>
+                <tr><td><input type="checkbox" name="Cooking" id="h4"><label for="h4">Cooking</label></td></tr>
+                <tr><td><input type="checkbox" name="Games" id="h5"><label for="h5">Playing Games</label></td></tr>
+            </table>
+        </fieldset>
+        <fieldset style="max-width: 500px;">
+            <legend>Slots Available</legend>
+            <table>
+                <tr><td><input type="radio" name="slot" id="h1"><label for="h1">Morning(5.00am - 9.00am)</label></td></tr>
+                <tr><td><input type="radio" name="slot" id="h2"><label for="h2">Afternoon(02.00pm - 03.00pm)</label></td></tr>
+                <tr><td><input type="radio" name="slot" id="h3"><label for="h3">Evening(06.00pm - 08.00pm)</label></td></tr>
+            </table>
+        </fieldset>
+        <table>
+            <tr>
+                <td><input type="submit" value="Submit"></td>
+                <td><input type="reset" value="Reset"></td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>
